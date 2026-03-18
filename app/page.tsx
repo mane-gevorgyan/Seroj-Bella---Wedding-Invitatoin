@@ -15,15 +15,18 @@ export default function Home() {
       />
       <div className="absolute top-48 inset-0 z-10" />
 
-      <div className="relative flex flex-col w-full z-20 md:w-1/2 md:m-auto">
+      <div className="relative flex flex-col w-full z-20 gap-20 md:w-1/2 md:m-auto">
         {/* Welcoming Image */}
-        <div className="relative w-full">
-          <Image alt="Seroj & Bella" src='/img1.JPG' width={600} height={600} className="w-full h-screen" />
-          <div className="absolute bottom-0 left-0 w-full h-96 bg-linear-to-b from-transparent to-white"></div>
-          <p className="absolute bottom-37.5 left-12 handwrittenFont text-6xl z-10 text-[#3f452d]">Սերգեյ</p>
-          <span className="absolute bottom-[-6%] left-[35%] text-[#9e9e9e] text-[300px] opacity-40">&</span>
-          <p className="absolute bottom-26.25 right-18 text-6xl handwrittenFont text-[#f7f6f6]">Բելլա</p>
-          <span className="absolute bottom-10 left-[30%] text-[#3f452d] handwrittenFont text-6xl">07.06.26</span>
+        <div className="w-full flex flex-col items-center">
+          <Image alt="Seroj & Bella" src='/img1.JPG' width={600} height={600} className="w-full max-w-125 h-screen" />
+          <div className="w-full max-w-125 relative">
+            <div className="absolute bottom-0 left-0 w-full h-96 bg-linear-to-b from-transparent to-white" />
+            <p className="absolute bottom-37.5 left-12 handwrittenFont text-6xl z-10 text-[#3f452d]">Սերգեյ</p>
+            <span className="absolute bottom-[-6%] left-[35%] text-[#9e9e9e] text-[300px] opacity-40">&</span>
+            <p className="absolute bottom-26.25 right-22 text-6xl handwrittenFont text-[#f7f6f6]">Բելլա</p>
+            <span className="absolute bottom-10 left-[30%] text-[#3f452d] handwrittenFont text-6xl">07.06.26</span>
+            <div className="absolute -bottom-4 left-0 w-full h-4 bg-linear-to-t from-transparent to-white" />
+          </div>
         </div>
 
         <div className="flex flex-col justify-center items-center gap-16 w-full p-5 md:p-0">
@@ -53,7 +56,7 @@ export default function Home() {
                 src='/heart.png'
                 width={60}
                 height={60}
-                className="absolute -right-0.75 -bottom-2.5"
+                className="absolute -right-px -bottom-2.5"
               />
             </div>
           </div>
@@ -88,10 +91,10 @@ export default function Home() {
           {/* Photo 2 */}
           <div className="relative w-full">
             <Image alt="" src='/img2.JPG' width={600} height={600} className="w-full" />
-            <div className="absolute top-0 left-0 w-full h-10 bg-linear-to-t from-transparent to-white"></div>
-            <div className="absolute right-0 top-0 w-4 h-full bg-linear-to-r from-transparent to-white"></div>
-            <div className="absolute left-0 top-0 w-4 h-full bg-linear-to-l from-transparent to-white"></div>
-            <div className="absolute bottom-0 left-0 w-full h-10 bg-linear-to-b from-transparent to-white"></div>
+            <div className="absolute top-0 left-0 w-full h-10 bg-linear-to-t from-transparent to-white" />
+            <div className="absolute right-0 top-0 w-4 h-full bg-linear-to-r from-transparent to-white" />
+            <div className="absolute left-0 top-0 w-4 h-full bg-linear-to-l from-transparent to-white" />
+            <div className="absolute bottom-0 left-0 w-full h-10 bg-linear-to-b from-transparent to-white" />
           </div>
 
           {/* Harcatertik */}
@@ -112,10 +115,10 @@ export default function Home() {
           {/* Photo 3 */}
           <div className="relative w-full">
             <Image alt="" src='/img3.JPG' width={600} height={600} className="w-full" />
-            <div className="absolute top-0 left-0 w-full h-10 bg-linear-to-t from-transparent to-white"></div>
-            <div className="absolute right-0 top-0 w-4 h-full bg-linear-to-r from-transparent to-white"></div>
-            <div className="absolute left-0 top-0 w-4 h-full bg-linear-to-l from-transparent to-white"></div>
-            <div className="absolute bottom-0 left-0 w-full h-96 bg-linear-to-b from-transparent to-white"></div>
+            <div className="absolute top-0 left-0 w-full h-10 bg-linear-to-t from-transparent to-white" />
+            <div className="absolute right-0 top-0 w-4 h-full bg-linear-to-r from-transparent to-white" />
+            <div className="absolute left-0 top-0 w-4 h-full bg-linear-to-l from-transparent to-white" />
+            <div className="absolute bottom-0 left-0 w-full h-96 bg-linear-to-b from-transparent to-white" />
             <span className="absolute bottom-10 text-center text-[#3f452d] handwrittenFont text-6xl xl:left-[30%]">Սիրով սպասում ենք ...</span>
           </div>
 
