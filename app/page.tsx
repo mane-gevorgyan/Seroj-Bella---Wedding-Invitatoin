@@ -11,14 +11,14 @@ export default function Home() {
         alt=""
         src="/bg2.jpg"
         fill
-        className="object-cover -z-20 opacity-[0.5] "
+        className="object-cover -z-20 opacity-[0.5]"
       />
       <div className="absolute top-48 inset-0 z-10" />
 
       <div className="relative flex flex-col w-full z-20 md:w-1/2 md:m-auto">
         {/* Welcoming Image */}
         <div className="relative w-full">
-          <Image alt="Seroj & Bella" src='/img1.jpg' width={600} height={600} className="w-full" />
+          <Image alt="Seroj & Bella" src='/img1.jpg' width={600} height={600} className="w-full h-screen" />
           <div className="absolute bottom-0 left-0 w-full h-96 bg-linear-to-b from-transparent to-white"></div>
           <p className="absolute bottom-37.5 left-12 handwrittenFont text-6xl z-10 text-[#3f452d]">Սերգեյ</p>
           <span className="absolute bottom-[-6%] left-[35%] text-[#9e9e9e] text-[300px] opacity-40">&</span>
@@ -37,11 +37,25 @@ export default function Home() {
             </span>
           </div>
 
-          {/* Save the Date */}
+          {/* Calendar */}
           <div className="flex flex-col justify-center items-center">
             <span className="handwrittenFont text-5xl mb-8">Save the date</span>
             <span className="text-2xl">Հունիս 2026</span>
-            <Image alt="07.06.2026" src='/Calendar.png' width={800} height={800} className="w-full" />
+            <div className="relative">
+              <Image
+                alt="07.06.2026"
+                src='/calendar.png'
+                width={425}
+                height={425}
+              />
+              <Image
+                alt=""
+                src='/heart.png'
+                width={60}
+                height={60}
+                className="absolute -right-0.75 -bottom-2.5"
+              />
+            </div>
           </div>
 
           {/* The Plan */}
@@ -102,7 +116,7 @@ export default function Home() {
             <div className="absolute right-0 top-0 w-4 h-full bg-linear-to-r from-transparent to-white"></div>
             <div className="absolute left-0 top-0 w-4 h-full bg-linear-to-l from-transparent to-white"></div>
             <div className="absolute bottom-0 left-0 w-full h-96 bg-linear-to-b from-transparent to-white"></div>
-            <span className="absolute bottom-10 text-center text-[#3f452d] handwrittenFont text-6xl">Սիրով սպասում ենք ...</span>
+            <span className="absolute bottom-10 text-center text-[#3f452d] handwrittenFont text-6xl xl:left-[30%]">Սիրով սպասում ենք ...</span>
           </div>
 
         </div>
