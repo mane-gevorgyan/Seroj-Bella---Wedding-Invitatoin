@@ -18,7 +18,7 @@ export default function Home() {
       <div className="relative flex flex-col w-full z-20 md:w-1/2 md:m-auto">
         {/* Welcoming Image */}
         <div className="relative w-full">
-          <Image alt="Seroj & Bella" src='/img1.JPG' width={600} height={600} className="w-full" />
+          <Image alt="Seroj & Bella" src='jpg' width={600} height={600} className="w-full" />
           <div className="absolute bottom-0 left-0 w-full h-96 bg-linear-to-b from-transparent to-white"></div>
           <p className="absolute bottom-37.5 left-12 handwrittenFont text-6xl z-10 text-[#3f452d]">Սերգեյ</p>
           <span className="absolute bottom-[-6%] left-[35%] text-[#9e9e9e] text-[300px] opacity-40">&</span>
