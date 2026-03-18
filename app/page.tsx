@@ -92,7 +92,7 @@ export default function Home() {
           {/* Countdown */}
           <div className="flex flex-col justify-center items-center gap-8">
             <p className="handwrittenFont text-6xl">Մնացել է ...</p>
-            <Countdown />
+            <Countdown targetDate={new Date("2026-06-07T15:00:00")} />
           </div>
 
           {/* Photo 3 */}

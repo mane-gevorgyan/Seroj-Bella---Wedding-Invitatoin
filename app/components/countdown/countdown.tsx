@@ -1,39 +1,42 @@
 'use client'
 
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
-export default function Countdown() {
-    const targetDate = new Date("2026-06-07T15:00:00");
+interface CountdownProps {
+    targetDate: Date;
+}
 
-    const calculateTimeLeft = () => {
-        const now = new Date();
-        const difference = targetDate.getTime() - now.getTime();
-
-        if (difference <= 0) {
-            return null;
-        }
-
-        return {
-            days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-            hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-            minutes: Math.floor((difference / (1000 * 60)) % 60),
-            seconds: Math.floor((difference / 1000) % 60),
-        };
-    };
-
-    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+export default function Countdown({ targetDate }: CountdownProps) {
+    const [timeLeft, setTimeLeft] = useState({
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+    });
 
     useEffect(() => {
-        const timer = setInterval(() => {
-            setTimeLeft(calculateTimeLeft());
-        }, 1000);
+        const updateTime = () => {
+            const now = new Date().getTime();
+            const distance = targetDate.getTime() - now;
 
-        return () => clearInterval(timer);
-    }, []);
+            if (distance < 0) {
+                setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+                return;
+            }
 
-    if (!timeLeft) {
-        return <span>🎉 Օրը հասել է 🎉</span>;
-    }
+            setTimeLeft({
+                days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+                hours: Math.floor((distance / (1000 * 60 * 60)) % 24),
+                minutes: Math.floor((distance / 1000 / 60) % 60),
+                seconds: Math.floor((distance / 1000) % 60),
+            });
+        };
+
+        updateTime();
+        const interval = setInterval(updateTime, 1000);
+
+        return () => clearInterval(interval);
+    }, [targetDate]);
 
     return (
         <div className="flex gap-4 text-center">
@@ -49,7 +52,7 @@ function TimeBox({ value, label }: { value: number; label: string }) {
     return (
         <div className="flex flex-col items-center">
             <span className="text-4xl handwrittenFont">{value}</span>
-            <span className="text-2xl ">{label}</span>
+            <span className="text-2xl">{label}</span>
         </div>
     );
 }
