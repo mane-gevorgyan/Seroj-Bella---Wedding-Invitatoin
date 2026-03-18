@@ -9,7 +9,7 @@ export default function Home() {
     <div className="relative min-h-screen bg-white/70">
       <Image
         alt=""
-        src="/bg2.jpg"
+        src="/bg2.JPG"
         fill
         className="object-cover -z-20 opacity-[0.5]"
       />
@@ -18,7 +18,7 @@ export default function Home() {
       <div className="relative flex flex-col w-full z-20 md:w-1/2 md:m-auto">
         {/* Welcoming Image */}
         <div className="relative w-full">
-          <Image alt="Seroj & Bella" src='/img1.jpg' width={600} height={600} className="w-full h-screen" />
+          <Image alt="Seroj & Bella" src='/img1.JPG' width={600} height={600} className="w-full h-screen" />
           <div className="absolute bottom-0 left-0 w-full h-96 bg-linear-to-b from-transparent to-white"></div>
           <p className="absolute bottom-37.5 left-12 handwrittenFont text-6xl z-10 text-[#3f452d]">Սերգեյ</p>
           <span className="absolute bottom-[-6%] left-[35%] text-[#9e9e9e] text-[300px] opacity-40">&</span>
@@ -44,7 +44,7 @@ export default function Home() {
             <div className="relative">
               <Image
                 alt="07.06.2026"
-                src='/calendar.png'
+                src='/Calendar.png'
                 width={425}
                 height={425}
               />
@@ -87,7 +87,7 @@ export default function Home() {
 
           {/* Photo 2 */}
           <div className="relative w-full">
-            <Image alt="" src='/img2.jpg' width={600} height={600} className="w-full" />
+            <Image alt="" src='/img2.JPG' width={600} height={600} className="w-full" />
             <div className="absolute top-0 left-0 w-full h-10 bg-linear-to-t from-transparent to-white"></div>
             <div className="absolute right-0 top-0 w-4 h-full bg-linear-to-r from-transparent to-white"></div>
             <div className="absolute left-0 top-0 w-4 h-full bg-linear-to-l from-transparent to-white"></div>
@@ -111,7 +111,7 @@ export default function Home() {
 
           {/* Photo 3 */}
           <div className="relative w-full">
-            <Image alt="" src='/img3.jpg' width={600} height={600} className="w-full" />
+            <Image alt="" src='/img3.JPG' width={600} height={600} className="w-full" />
             <div className="absolute top-0 left-0 w-full h-10 bg-linear-to-t from-transparent to-white"></div>
             <div className="absolute right-0 top-0 w-4 h-full bg-linear-to-r from-transparent to-white"></div>
             <div className="absolute left-0 top-0 w-4 h-full bg-linear-to-l from-transparent to-white"></div>
