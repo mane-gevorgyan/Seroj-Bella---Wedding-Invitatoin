@@ -11,7 +11,7 @@ export default function Button({ src }: IButtonProps) {
 
     return (
         <button
-            className="rounded-4xl py-4 px-6 bg-linear-to-r from-[#fdcdea] via-[#ffe5eb] to-[#efe6eb]"
+            className="rounded-4xl py-4 px-6 bg-linear-to-r from-[#fdcdea] via-[#ffe5eb] to-[#efe6eb] cursor-pointer"
             onClick={onClickChurch}
         >
             Ինչպես հասնել
