@@ -48,6 +48,8 @@ export default function Home() {
           </div>
         </div>
 
+        <Image alt="" src='/img1.JPG' width={500} height={500} />
+
         <div className="flex flex-col justify-center items-center gap-16 w-full p-5 md:p-0">
           {/* Dear guests */}
           <div className="flex flex-col justify-center items-center gap-8">
