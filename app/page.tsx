@@ -17,7 +17,7 @@ export default function Home() {
     <div className="relative min-h-screen bg-white/70 flex flex-col items-center">
       <Image
         alt=""
-        src="/bg2.JPG"
+        src="/bg2.jpg"
         fill
         className="object-cover -z-20 opacity-[0.5]"
       />
@@ -33,7 +33,7 @@ export default function Home() {
         <div className="w-full flex flex-col items-center">
           <Image
             alt="Seroj & Bella"
-            src='/img1.JPG'
+            src='/img1.jpg'
             width={500}
             height={500}
             className="h-screen object-cover md:h-auto"
@@ -47,8 +47,6 @@ export default function Home() {
             <div className="absolute -bottom-4 left-0 w-full h-4 bg-linear-to-t from-transparent to-white" />
           </div>
         </div>
-
-        <Image alt="" src='/img1.JPG' width={500} height={500} />
 
         <div className="flex flex-col justify-center items-center gap-16 w-full p-5 md:p-0">
           {/* Dear guests */}
@@ -119,7 +117,7 @@ export default function Home() {
 
           {/* Photo 2 */}
           <div className="relative w-full">
-            <Image alt="" src='/img2.JPG' width={500} height={500} />
+            <Image alt="" src='/img2.jpg' width={500} height={500} />
             <div className="absolute top-0 left-0 w-full h-10 bg-linear-to-t from-transparent to-white" />
             <div className="absolute right-0 top-0 w-4 h-full bg-linear-to-r from-transparent to-white" />
             <div className="absolute left-0 top-0 w-4 h-full bg-linear-to-l from-transparent to-white" />
@@ -150,7 +148,7 @@ export default function Home() {
 
           {/* Photo 3 */}
           <div className="relative w-full">
-            <Image alt="" src='/img3.JPG' width={500} height={500} />
+            <Image alt="" src='/img3.jpg' width={500} height={500} />
             <div className="absolute top-0 left-0 w-full h-10 bg-linear-to-t from-transparent to-white" />
             <div className="absolute right-0 top-0 w-4 h-full bg-linear-to-r from-transparent to-white" />
             <div className="absolute left-0 top-0 w-4 h-full bg-linear-to-l from-transparent to-white" />
