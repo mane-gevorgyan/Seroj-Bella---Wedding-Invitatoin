@@ -32,6 +32,18 @@ const barak = localFont({
   variable: "--font-barak",
 });
 
+const russian = localFont({
+  src: "./fonts/russian.otf",
+  weight: "400",
+  variable: "--font-russian",
+});
+
+const rus = localFont({
+  src: "./fonts/rus.otf",
+  weight: "400",
+  variable: "--font-rus",
+});
+
 export const metadata: Metadata = {
   title: "Seroj & Bella Wedding",
   description: "Wedding invitation site",
@@ -39,7 +51,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="hy" className={`${handwritten.variable} ${square.variable} ${barak.variable} ${monserrat.variable} ${allegro.variable}`}>
+    <html lang="hy" className={`${handwritten.variable} ${russian.variable} ${rus.variable}`}>
       <body
         className={`${barak.variable} antialiased`}
       >

@@ -33,3 +33,11 @@ body {
 .barakFont {
   font-family: var(--font-barak);
 }
+
+.russianFont {
+  font-family: var(--font-russian);
+}
+
+.rusFont {
+  font-family: var(--font-rus);
+}
