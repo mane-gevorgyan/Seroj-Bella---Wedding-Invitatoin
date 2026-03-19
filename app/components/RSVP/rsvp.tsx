@@ -3,6 +3,7 @@
 import { translations } from "@/app/lib/translations";
 import { Lang } from "@/app/page";
 import { useState } from "react";
+import { supabase } from "@/app/lib/supabase";
 
 type Translation = typeof translations['hy'];
 
@@ -16,15 +17,24 @@ export default function RSVP({ translation, language }: RSVPProps) {
     const [name, setName] = useState("");
     const [submitted, setSubmitted] = useState(false);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        const data = {
-            attendance,
-            name,
-        };
+        if (!attendance || !name) return;
 
-        console.log("RSVP Data:", data);
+        const { error } = await supabase
+            .from("wedding_rsvp")
+            .insert([
+                {
+                    name,
+                    attendance,
+                },
+            ]);
+
+        if (error) {
+            console.error("Supabase error:", error.message);
+            return;
+        }
 
         setAttendance("");
         setName("");
