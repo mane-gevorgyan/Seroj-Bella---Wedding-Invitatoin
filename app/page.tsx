@@ -62,7 +62,7 @@ export default function Home() {
             <div className="relative">
               <Image
                 alt="07.06.2026"
-                src='/Calendar.png'
+                src='/calendar.png'
                 width={425}
                 height={425}
               />
